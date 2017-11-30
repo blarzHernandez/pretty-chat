@@ -1,0 +1,14 @@
+<mat-sidenav-container class="custom_container"> 
+  <mat-sidenav [fixedInViewport]="true" class="custom"  opened="true" #sidenav  mode="side" >
+    <mat-nav-list >
+      <a mat-list-item *ngFor="let user of users">{{ user.name }}</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+    <button mat-button (click) = "sidenav.toggle()">Toggle</button>
+    Content
+   <footer></footer>
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>

@@ -1,0 +1,18 @@
+
+.custom_container{
+    top:60px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right:0;
+}
+.custom{
+ background:rgba(255, 0, 0,.5);
+ justify-content: center;
+ display: flex;
+ justify-content: center;
+ width: 200px;
+ color:red;
+
+
+}
