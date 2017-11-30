@@ -12,12 +12,12 @@ const server = require("http").Server(app)
 
 const io = require("socket.io")(server);
 
-app.use(express.static(path.join(__dirname, "../src")));
+app.use(express.static(path.join(__dirname, "../dist")));
 //const root = path.join(path.resolve(__dirname,'../../target'));
 //console.log(root);
 
 app.get("/",function(req,res){
-    res.sendFile(path.join(__dirname,'src/index.html'));
+    res.sendFile(path.join(__dirname,'index.html'));
 })
 
 //set server connections
